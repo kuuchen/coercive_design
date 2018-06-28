@@ -1,0 +1,508 @@
+body{
+	margin: 0px;
+}
+
+.navigation{
+	position: fixed;
+	top: 50%;
+	margin-top: -90px;
+	left: 40px;
+	/*color: white;*/
+	/*	color: #fadacb;*/
+	color: #f6b99c;
+
+	font-family: 'Ubuntu', serif;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 22px;
+	width: 200px;
+	height: 180px;
+	vertical-align: top;
+	display: none;
+
+	z-index: 100;
+}
+
+.navItem{
+	cursor: pointer;
+	opacity: 0.5;
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
+}
+
+.navItem:hover{
+	opacity: 1;
+}
+
+.navContainer{
+	display: flex;
+	flex-direction: row;
+}
+
+.navOneText, .navTwoText, .navThreeText, .navFourText, .navFiveText, .navSixText, .navSevenText, .navEightText{
+	opacity: 0;
+	z-index: 100;
+	padding-left: 20px;
+	cursor: default;
+}
+
+.introBG, .firstBG, .secondBG, .thirdBG, .fourthBG, .fifthBG, .sixthBG, .seventhBG, .eighthBG{
+	z-index: -10;
+	background-size: 100%;
+	position: absolute;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.introBG{
+	background-color: #000000;
+	height: 120%;
+	top: 0%;
+	left: 0px;
+}
+
+.firstBG{
+	background: linear-gradient(#000000, #030d15);
+	height: 90%;
+	top: 120%;  
+	/*height of intro is 130%*/
+}
+
+.secondBG{
+	background: linear-gradient(#030d15, #071a2a);
+	height: 90%;
+	top: 210%;  
+	/*height of intro is 130% + first is 90%*/
+
+}
+
+.thirdBG{
+	background: linear-gradient(#071a2a, #0b283f);
+	height: 140%;
+	top: 300%;
+	/* intro 130% + 1st 90% + 2nd 90% */
+}
+
+.fourthBG{
+	background: linear-gradient(#0b283f, #0f3554);
+	height: 150%;
+	top: 430%;
+	/* intro 130% + 1st 90% + 2nd 90% + 3rd 140%*/
+}
+
+
+.fifthBG{
+	background: linear-gradient(#0f3554, #134369);
+	height: 140%;
+	top: 580%;
+	/* intro 130% + 1st 90% + 2nd 80% + 3rd 140% + 4th 150%*/
+}
+
+.sixthBG{
+	background: linear-gradient(#134369, #426887);
+	height: 90%;
+	top: 720%;
+	/* intro 130% + 1st 90% + 2nd 80% + 3rd 140% + 4th 150% + 5th 140/* intro 130% + 1st 90% + 2nd 80% + 3rd 140% + 4th 150%*/*/
+}
+
+.seventhBG{
+	background: linear-gradient(#426887, #718ea5);
+	height: 80%;
+	top: 810%;
+	/* intro 130% + 1st 90% + 2nd 80% + 3rd 140% + 4th 150% + 5th 140/* intro 130% + 1st 90% + 2nd 80% + 3rd 140% + 4th 150%*/*/
+}
+
+.eighthBG{
+	background: linear-gradient(rgba(113,142,165,1), rgba(255,0,0,0));
+	top: 890%;
+	height: 70%;
+}
+
+.endPhoto{
+	z-index: -50;
+	position: absolute;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+
+	top: 880%;
+	background-color: #000000;
+}
+
+.backgroundPhoto{
+	width: 100%;
+	height: auto;
+	position: absolute;
+
+
+}
+/*SPECIFICALLY JUST THE FIRST SCREEN*/
+
+.introText{
+	position: absolute;
+	width: 800px;
+	height: 200px;
+	z-index: 15;
+	top: 60%;
+	left: 50%;
+	margin: -100px 0 0 -400px;
+	cursor: default;
+}
+
+header{
+	/*	color: white;*/
+	color: #fadacb;
+
+	font-size: 30px;
+	text-align: center;
+	vertical-align: middle;
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+.introImageDiv{
+	display: none;
+	z-index: 10;
+}
+
+.introImage{
+	width: 800px;
+	height: auto;
+	display: block;
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* FIRST SCREEN ENDS HERE */
+
+/* NAVIGATION FOR PANEL SCREENS */
+
+.panelButtons{
+	font-family: 'Ubuntu', serif;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 20px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 195px;
+}
+
+.navButton{
+	background-color: #f6b99c;
+
+	border: none;
+	font-size: 2px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	padding: 4px;
+	margin: 6px 2px;
+
+	opacity: 0.5;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.navButton:hover{
+	opacity: 1;
+}
+
+.panelB1, .panelB4, .panelB7{
+	opacity: 1;
+}
+/* NAVIGATION PANEL ENDS */
+
+/* GENERAL STUFF THAT APPLIES TO FOLLOWING SCREENS */
+
+.hideme
+{
+	opacity:0;
+}
+
+.container{
+	position: absolute;
+	width: 800px;
+	height: auto;
+	margin-left: -400px;
+	left: 50%;
+}
+
+.sectionTitle{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	color: #fadacb;
+}
+
+.sectionPreface{
+	font-family: 'Ubuntu', serif;
+	font-weight: 200;
+	font-size: 16px;
+	line-height: 20px;
+	color: white;
+}
+
+.text{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 20px;
+
+}
+
+.panelTitle{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	color: #fadacb;
+	text-transform: uppercase;
+}
+
+.flex-container{
+	display: flex;
+	flex-direction: row;
+}
+
+.images{
+	padding-top: 30px;
+	width: 350px;
+}
+
+.panelImage{
+	width: 350px;
+	height: auto;
+	margin-left: -20px;
+	position: absolute;
+}
+
+.panelBlank{
+	opacity: 1;
+	z-index: 10;
+}
+
+.panelText{
+	position: absolute;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sectionText{
+	padding-left: 20px;
+	padding-right: 30px;
+	margin-right: 20px;
+	margin-top: 200px;
+	margin-left: 20px;
+	border: 2px solid rgba(246, 185, 156, 0.5);
+	border-radius: 8px;
+
+	width: 300px;
+}
+
+/* GENERAL ENDS HERE */
+
+
+/* 1 introduction*/
+.textA{
+	position: absolute;
+	top: 150%;
+	width: 600px;
+	height: auto;
+	margin-left: -300px;
+	left: 50%;
+}
+
+/* 2 FOR WHEN YOU NEED IT THE MOST. */
+.textB{
+	position: absolute;
+	top: 230%;
+	width: 600px;
+	height: auto;
+	margin-left: -300px;
+	left: 50%;
+}
+
+/* 6 GENERAL ACCESSIBILITY */
+.textF{
+	position: absolute;
+	top: 740%;
+	width: 600px;
+	height: auto;
+	margin-left: -300px;
+	left: 50%;
+}
+
+/* 7 DESIGN CHOICES */
+.textG{
+	position: absolute;
+	top: 840%;
+	width: 600px;
+	height: auto;
+	margin-left: -300px;
+	left: 50%;
+}
+
+
+/* 8 EFFECTS */
+.textH{
+	position: absolute;
+	top: 910%;
+	width: 600px;
+	height: auto;
+	margin-left: -300px;
+	left: 50%;
+}
+
+/* 3 YOUR SPACE TO VENT AND THINK OUT LOUD */
+
+.containerC{
+	top: 310%;
+}
+
+.panelI1{
+	z-index: 15;
+}
+
+.panelI1A{
+	opacity: 0;
+	z-index: 20;
+}
+
+.panelI2, .panelI3{
+	opacity: 0;
+	z-index: 15;
+}
+
+.textC{
+	height: 230px;
+
+}
+
+.panelT1{
+	width: 300px;
+	height: 300px;
+	opacity: 1;
+}
+
+.panelT2, .panelT3{
+	width: 300px;
+	height: 0px;
+	opacity: 0;
+}
+
+/* 4 */
+
+.containerD{
+	top: 450%;
+	/*300+140*/
+}
+
+.panelI4{
+	z-index: 15;
+}
+
+.panelI4A{
+	opacity: 0;
+	z-index: 20;
+}
+
+.panelI5, .panelI5A, .panelI5B, .panelI6, .panelI6A, .panelI6B{
+	opacity: 0;
+	z-index: 15;
+}
+
+.textD{
+	height: 250px;
+	/*CHANGE LATER ACCORDING TO AMOUNT OF TEXT*/
+}
+
+.panelT4{
+	width: 300px;
+	height: 300px;
+	opacity: 1;
+}
+
+.panelT5, .panelT6{
+	width: 300px;
+	height: 0px;
+	opacity: 0;
+}
+
+
+/* 5 */
+
+.containerE{
+	top: 590%;
+	/*300+140+140*/
+}
+
+.panelI7{
+	z-index: 15;
+}
+
+.panelI8, .panelI8A, .panelI9, .panelI9A, .panelI10, .panelI11, .panelI11A, .panelI11B, .panelI12, .panelI12A, .panelI13{
+	opacity: 0;
+	z-index: 15;
+}
+
+.textE{
+	height: 170px;
+	/*CHANGE LATER ACCORDING TO AMOUNT OF TEXT*/
+}
+
+.panelT7{
+	width: 300px;
+	height: 300px;
+	opacity: 1;
+}
+
+.panelT8, .panelT9, .panelT10, .panelT11, .panelT12, .panelT13{
+	width: 300px;
+	height: 0px;
+	opacity: 0;
+}
+
+
+/*CREDIT*/
+
+.credit {
+    display: flex;
+    flex-direction: row;
+
+    color: #fadacb;
+    opacity: 0.5;
+    position: absolute;
+    font-size: 12px;
+    left: 40px;
+    top: 998%;
+	font-family: 'Ubuntu', serif;
+    padding: 0px;
+    z-index: 100;
+    height: 30px;
+    width: 400px;
+    cursor: default;
+
+    -webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
+}
+
+.credit:hover {
+    opacity: 1;
+}
+
+.creditText{
+	padding-left: 20px;
+	color: #fadacb;
+	z-index: 100;
+	opacity: 0;
+}
+
+
